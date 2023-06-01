@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Alarm Clock" content=" Creating Alarm Clock for Coading Ninjas Skill Test" />
+    
+    <title>Alarm Clock</title>
+
+    <!--Favicon-->
+
+    <link rel = "icon" href="https://cdn-icons-png.flaticon.com/128/50/50037.png" />
+
+    <!-- linking CSS file to Html -->
+
+    <link rel = "stylesheet" href = "Clock.css" />
+
+</head>
+
+<body>
+    <div class= "page-title" >
+      <h2>ALARM CLOCK Web  </h2>
+    </div>
+    <div class="main-container d-flex">
+      <div class="clock-container d-flex">
+        <div class="current-time mb" id= "current-time"> _ : _ : _ </div> 
+        <form class="alarm-form d-flex mb">
+          <div>
+          <select name="hour" id="hours" required></select>
+
+          <select required name="minute" id="minutes"></select>
+
+          <select required name="second" id="seconds"></select>
+          <select required name="am-pm" id="am-pm">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+          </div>
+          <button class="btn submit-button" id="submitButton" type="submit">Set Alarm</button>
+        </form>
+        <div class="set-alarm-container">
+          <div class="set-alarm-container-title mb">Alarm Time </div>
+          <div class="alarms-container" id= "alarms-container"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Linking JavaScript File to HTML -->
+    <script src="./Clock.js"></script>
+  </body>
+</html>
+</html>
